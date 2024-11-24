@@ -1,5 +1,5 @@
 public class Patient extends Person{
-    public String patientId;
+    private String patientId;
 
     public String birthday;
 
@@ -10,7 +10,11 @@ public class Patient extends Person{
         this.birthday =birthday;
 
     }
+    public String getPatientId() {
+        return this.patientId;
+    }
     public char getPatientType(){
+
         return this.patientId.charAt(0);
     }
 }
