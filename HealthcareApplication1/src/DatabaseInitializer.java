@@ -5,7 +5,7 @@ import java.sql.Statement;
 
     public class DatabaseInitializer {
         public static void initializeDatabase() {
-            String url = "jdbc:sqlite:healthcare.db"; // This creates a file named 'healthcare.db' in your project folder
+            String url = "jdbc:sqlite:D:/Healthcare/healthcare.db";// This creates a file named 'healthcare.db' in your project folder
 
             String createDoctorsTable = "CREATE TABLE IF NOT EXISTS Doctors (" +
                     "DoctorId INTEGER PRIMARY KEY AUTOINCREMENT," +

@@ -17,7 +17,7 @@ public class Controllers {
             String specialization = scanner.nextLine();
             System.out.println("Enter Doctor's Contact: ");
             String contact = scanner.nextLine();
-            DoctorDAO.addDoctor(name, birthday, specialization, contact);
+
 
             Random random = new Random();
             Doctor tempDoctor = new Doctor(random.nextInt(), name, birthday, specialization, contact);
@@ -52,7 +52,7 @@ public class Controllers {
             String birthday = scanner.nextLine();
             System.out.println("Enter your Contact Number: ");
             String contact = scanner.nextLine();
-            PatientDAO.addPatient(name,birthday,contact);
+
 
             Patient tempDoctor = new Patient(id, name, birthday, contact);
             allPatients.add(tempDoctor);

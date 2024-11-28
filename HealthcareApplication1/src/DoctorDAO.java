@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DoctorDAO {
-    private static final String URL = "jdbc:sqlite:healthcare.db";
+    private static final String URL = "jdbc:sqlite:D:/Healthcare/healthcare.db";
 
     public static void addDoctor(String name, String birthday, String specialization, String contact) {
         String sql = "INSERT INTO Doctors (Name, Birthday, Specialization, Contact) VALUES (?, ?, ?, ?)";
